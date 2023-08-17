@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/all.min.css">
+    <link rel="stylesheet" href="/dist/fontawesome.min.css">
+    <link rel="stylesheet" href="/dist/output.css">
+    
+    <!-- Link slider CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <style>
+        #logoSlider{
+            background: linear-gradient(to right, black 28%, #15FF8F 28%, #15FF8F 76%, black 76%);
+        }
+
+        body::-webkit-scrollbar{
+            display: none;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <header class="bg-secondary top-0 z-50 py-[28px]">
+        <nav class="container mx-auto">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-[11px] z-50">
+                    <a href="#"><img class="w-7" src="/img/logo.png" alt=""></a>
+                    <h4 class="font-Kanit text-[22px] tracking-wide text-white">Agenzia</h4>
+                </div>
+
+                <ul class="hidden lg:flex items-center font-Kanit space-x-[42px]">
+                    <li><a href="#home" class="text-primary text-sm tracking-wide hover:text-Primary ease-in duration-200">Home</a></li>
+                    <li><a href="#About" class="text-white text-sm tracking-wide hover:text-Primary ease-in duration-200">About</a></li>
+                    <li id="page" class="relative group">
+                        <a href="#Page" class="text-white text-sm tracking-wide hover:text-Primary ease-in duration-200">
+                            Page <i class="fa-solid fa-angle-down fa-xs pt-1" style="color: #ffffff;"></i>
+                        </a>
+
+                        <div id="dropDown" class="w-40 absolute left-0 top-full  bg-black divide-y divide-gray-500 divide-dashed text-white opacity-0 group-hover:opacity-100 invisible group-hover:visible">
+                            <ul class="space-y-2">
+                                <li class="hover:bg-primary bg-colorHeading"><a href="#" class="font-Inter font-medium text-sm px-12 hover:text-black" >Home</a></li>
+                                <li class="hover:bg-primary bg-colorHeading"><a href="#" class="font-Inter font-medium text-sm px-12 hover:text-black">about</a></li>
+                                <li class="hover:bg-primary bg-colorHeading"><a href="#" class="font-Inter font-medium text-sm px-12 hover:text-black">Blog</a></li>
+                                <li class="hover:bg-primary bg-colorHeading"><a href="#" class="font-Inter font-medium text-sm px-12 hover:text-black">Contact</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#Blog" class="text-white text-sm tracking-wide hover:text-Primary ease-in duration-200">Blog</a></li>
+                    <li><a href="#Content" class="text-white text-sm tracking-wide hover:text-Primary ease-in duration-200">Content</a></li>
+                </ul>
+
+                <div class="hidden lg:flex">
+                    <img class="w-[41px] cursor-pointer" src="/img/Menu.png" alt="">
+                </div>
+
+                <!--======= Mobile Manu ========-->
+                <!--======= Mobile Manu ========-->
+                <div id="hamburger" class="lg:hidden text-white cursor-pointer z-50">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div id="Menu" class="hidden bg-black h-[100vh] absolute inset-0 z-40">
+                    <ul class="h-full grid place-items-center py-20">
+                        <li><a id="hlink" href="#home" class="text-primary hover:text-Primary ease-in duration-200">Home</a></li>
+                        <li><a id="hlink" href="#About" class="text-white hover:text-Primary ease-in duration-200">About</a></li>
+                        <li><a id="hlink" href="#Page" class="text-white hover:text-Primary ease-in duration-200 flex items-center justify-center">Page <img class="h-4 " src="/img/ic_baseline-keyboard-arrow-down.png" alt=""> </a></li>
+                        <li><a id="hlink" href="#Blog" class="text-white hover:text-Primary ease-in duration-200">Blog</a></li>
+                        <li><a id="hlink" href="#Content" class="text-white hover:text-Primary ease-in duration-200">Content</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="Home" class="bg-black">
+        <div class="overflow-auto">
+            <img class="w-[90px] h-auto float-right" src="/img/Infinity Circle-right10.png" alt="">
+            <div class="space-y-0.5">
+                <div class="md:w-[915px] mx-auto pt-8 space-y-12">
+                    <div class="space-y-6 md:space-y-1">
+                        <div class="space-y-2">
+                            <h1 class="sm:w-[35rem] font-Kanit font-[600] tracking-normal text-white lg:text-[71px] sm:text-5xl text-3xl">We Create</h1>
+                            <h1 class="sm:w-[35rem] font-Kanit font-semibold tracking-normal text-white lg:text-[71px] sm:text-5xl text-3xl">Unique Design</h1>
+                        </div>
+                        <div class="md:flex items-center justify-end space-y-6 md:space-y-0 md:space-x-4">
+                            <p class="font-Inter font-light text-[14px] text-bodyLight xl:pr-[115px] tracking-[.010em] leading-relaxed">Same true, not leave have question it client he in mice <br> years with devious would he parts its name could</p>
+                            <img class="w-[9.5rem] ml-2 hidden lg:block" src="/img/Arrow (2).png" alt="">
+                            <div class="w-28 h-28 bg-primary bg-opacity-10 rounded-full grid place-content-center space-y-1">
+                                <img class="w-7 text-primary m-auto" src="/img/ph_arrow-up-right (1).png" alt="">
+                                <p class="w-20 tracking-wide leading-snug text-primary font-Inter text-center text-[11px]">Explore Our Service</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6 md:space-y-1">
+                        <div class="lg:flex justify-end">
+                            <div class="space-y-2">
+                                <h1 class="sm:w-[35rem] font-Kanit font-semibold tracking-normal text-white lg:text-[71px] sm:text-5xl text-3xl">Experience with</h1>
+                                <h1 class="sm:w-[35rem] font-Kanit font-semibold tracking-normal text-white lg:text-[71px] sm:text-5xl text-3xl">UI/UX Design</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img class="w-[90px] h-auto float-left" src="/img/Infinity Circle-left10.png" alt="">
+                    <div class="md:w-[915px] mx-auto"> 
+                        <div class="md:flex items-center justify-between space-y-6 md:space-y-0">
+                            <div class="w-28 h-28 bg-primary rounded-full grid place-content-center space-y-[3px]">
+                                <img class="w-7 m-auto" src="/img/ph_arrow-up-right.png" alt="">
+                                <p class="w-20 tracking-normal leading-snug font-Inter font-bold text-center text-[11px]">Explore Our Service</p>
+                            </div>
+                            <img class="w-[9.5rem] xl:mr-60 hidden lg:block" src="/img/Arrow1.png" alt="">
+                            <p class="font-Inter font-light pr-5 text-[14px] text-bodyLight tracking-[.010em] leading-relaxed">Good to he design drunk the a at opulence have for is <br> universe approach written during phase.</p>
+                        </div>
+                    </div>    
+                </div>    
+            </div>
+                    
+        </div>
+    </section>
+
+    <section id="about" class="bg-offWhite py-20">
+        <div class="container mx-auto space-y-8">
+            <div class="sm:flex items-center justify-center sm:space-x-14 space-y-6 sm:space-y-0">
+                <h1 class="sm:w-[32rem] w-64 font-Kanit text-colorHeading sm:text-5xl text-2xl font-medium">
+                    Shapes can be created using features as well.
+                </h1>
+                <p class="sm:w-80 font-Inter text-xs tracking-wider font-normal">
+                    Antiquity back the of events from is lamps, end retired was tone but set name that of refinement 
+                    he presence one no than intrigued.
+                </p>
+            </div>
+        
+            <div class="swiper mySwiper lg:w-7/12 overflow-hidden">
+                <ul class="swiper-wrapper">
+                    <li class="sm:w-64 h-auto swiper-slide bg-white drop-shadow-md p-4 space-y-4 hover:bg-primary hover:border-none">
+                        <img src="/img/icons.png" alt="">
+                        <h1 class="font-Kanit sm:text-xl text-colorHeading font-medium">Branding</h1>
+                        <p class="font-Inter text-xs">
+                            Profitable no let's have was. Of most with for armour you'd told which antiquity they in long suspicion in 
+                            fifteen feel of working a never there well cheek, on of have spirit, sentinels.
+                        </p>
+                    </li>
+    
+                    <li class="sm:w-64 h-96 swiper-slide bg-white drop-shadow-md p-4 space-y-4 hover:bg-primary hover:border-none">
+                        <img src="/img/icons (1).png" alt="">
+                        <h1 class="font-Kanit sm:text-xl text-colorHeading font-medium">Sufficient</h1>
+                        <p class="font-Inter text-xs">
+                            Case and nothing plot and to and me the ensure of coffee first might must absolutely reflection bedding contrast, 
+                            then wild then lower positives in as profitable the accompany.
+                        </p>
+                    </li>
+    
+                    <li class="sm:w-64 h-96 swiper-slide bg-white drop-shadow-md p-4 space-y-4 hover:bg-primary hover:border-none">
+                        <img src="/img/icons (2).png" alt="">
+                        <h1 class="font-Kanit sm:text-xl text-colorHeading font-medium">Starting to think</h1>
+                        <p class="font-Inter text-xs">
+                            Epic the all it to leaves be butter of in mellower that small especially even ducks of over a he get I neuter. 
+                            I queen, the kind day long first steps. Front warned answering.
+                        </p>
+                    </li>
+    
+                    <li class="sm:w-64 h-96 swiper-slide bg-white drop-shadow-md p-4 ck space-y-4 hover:bg-primary hover:border-none">
+                        <img src="/img/icons (3).png" alt="">
+                        <h1 class="font-Kanit sm:text-xl text-colorHeading font-medium">Performance</h1>
+                        <p class="font-Inter text-xs">
+                            Time officers reached eyes beginnings, intrigued between rung. As blind after likewise, she quite endeavours 
+                            blind violin and devious for trying made up funny you would.
+                        </p>
+                    </li>
+                </ul>
+                <div class="flex items-center justify-center space-x-6 pt-8">
+                    <button id="button-prev">
+                        <img class="w-28" src="/img/Arrow (3).png" alt="">
+                    </button>
+
+                    <button id="button-next">
+                        <img class="w-28" src="/img/arrow (1).png" alt="">
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="logoSlider" class="w-full h-auto py-6 hidden xl:block">
+        <div class="">
+            <div class="flex items-center justify-between">
+                <div>
+                    <img class="w-8" src="/img/IDEA.png" alt="">
+                </div>
+
+                <div>
+                    <img class="w-60" src="/img/ENTERTAINMENT.png" alt="">
+                </div>
+
+                <div id="natural" class="">
+                    <img class="w-32" src="/img/NATURAL.png" alt="">
+                </div>
+
+                <div>
+                    <img class="w-28" src="/img/POLITICS.png" alt="">
+                </div>
+
+                <div>
+                    <img class="w-28" src="/img/SPORTS.png" alt="">
+                </div>
+
+                <div>
+                    <img class="w-28" src="/img/TRAVEL.png" alt="">
+                </div>
+
+                <div>
+                    <img class="w-28" src="/img/FASHION.png" alt="">
+                </div>
+
+                <div>
+                    <img class="w-40" src="/img/TECHNOLOGY.png" alt="">
+                </div>
+
+                <div>
+                    <img class="w-14" src="/img/ECO.png" alt="">
+                </div>
+
+                <div>
+                    <img class="w-12" src="/img/FOOD.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-offWhite py-20">
+        <div class="container mx-auto pt-5">
+            <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-6 xl:mx-[9.5rem] space-y-6 lg:space-y-0">
+                <div class="sm:col-span-2 lg:col-span-1 space-y-5">
+                    <div class="relative space-y-2">
+                        <h2 class="font-Kanit sm:text-5xl text-3xl tracking-tight text-colorHeading font-medium">Selected</h2>
+                        <h2 class="sm:indent-24 indent-16 tracking-tight text-colorHeading font-Kanit sm:text-5xl text-3xl font-medium">Projects</h2>
+                        <img class="w-6 absolute sm:top-12 top-9 sm:left-[16rem] left-[10.5rem]" src="/img/LINE.png" alt="">
+                    </div>
+                    <div class="space-y-11">
+                        <p class="sm:w-64 font-Inter font-medium text-body/Dark text-xs tracking-wide leading-relaxed">
+                            Show fresh those outcomes versus which, that screen in I that's the hologram of yet as 
+                            success come behind.
+                        </p>
+                        <div class="w-28 h-28 bg-primary rounded-full grid place-content-center">
+                            <img class="w-8 m-auto" src="/img/ph_arrow-up-right.png" alt="">
+                            <p class="w-20 font-Inter text-xs font-semibold text-center">View All Projects</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <div class="space-y-5">
+                            <img class="sm:w-[18.1rem] h-auto" src="/img/Rectangle 95.png" alt="">
+                            <h3 class="sm:w-72 w-64 font-Kanit tracking-tight leading-none text-3xl text-colorHeading font-medium">Improve your presentation skills</h3>
+                        </div>
+                        <p class="sm:w-72 w-64 font-Inter text-xs tracking-wide">Please this pattern. It retired, velocity feedback was the alarm truth, and a geared effects</p>
+                        <div class="flex items-center space-x-4 pt-1">
+                            <img class="w-[4.5rem]" src="/img/Arrow3.png" alt="">
+                            <small class="font-Inter tracking-tighter text-[11px] font-bold">View Details</small>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="space-y-5">
+                            <img class="sm:w-[18.1rem] h-auto" src="/img/Rectangle 95 (1).png" alt="">
+                            <h3 class="sm:w-72 w-64 font-Kanit tracking-tight leading-none text-3xl text-colorHeading font-medium">Plant-based diet and how to get started</h3>
+                        </div>
+                        <p class="sm:w-72 w-64 font-Inter text-xs tracking-wide">Finally, self-interest a not excessive on to either at instruments, intrigued hours.</p>
+                        <div class="flex items-center space-x-4 pt-1">
+                            <img class="w-[4.5rem]" src="/img/Arrow3.png" alt="">
+                            <small class="font-Inter tracking-tighter text-[11px] font-bold">View Details</small>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="sm:pt-20 space-y-8">
+                    <div class="space-y-4">
+                        <div class="space-y-5">
+                            <img class="sm:w-[18.1rem] h-auto" src="/img/Rectangle 95 (2).png" alt="">
+                            <h3 class="sm:w-72 w-64 font-Kanit tracking-tight leading-none text-3xl text-colorHeading font-medium">Travel destinations to visit in 2023</h3>
+                        </div>
+                        <p class="sm:w-72 w-64 font-Inter text-xs tracking-wide">Even such sisters and them been self-interest. Of officers, set does latter the I decades</p>
+                        <div class="flex items-center space-x-4 pt-1">
+                            <img class="w-[4.5rem]" src="/img/Arrow3.png" alt="">
+                            <small class="font-Inter tracking-tighter text-[11px] font-bold">View Details</small>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="space-y-5">
+                            <img class="sm:w-[18.1rem] h-auto" src="/img/Rectangle 95 (3).png" alt="">
+                            <h3 class="sm:w-72 w-64 font-Kanit tracking-tight leading-none text-3xl text-colorHeading font-medium">Your personal and professional life</h3>
+                        </div>
+                        <p class="sm:w-72 w-64 font-Inter text-xs tracking-wide">Sitting on and not of in however even where he with success above trying.</p>
+                        <div class="flex items-center space-x-4 pt-1">
+                            <img class="w-[4.5rem]" src="/img/Arrow3.png" alt="">
+                            <small class="font-Inter tracking-tighter text-[11px] font-bold">View Details</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="designDevelopment" class="bg-secondary py-[5.5rem]">
+        <div class="overflow-auto">
+            <img class="w-[5.5rem] h-auto float-right" src="/img/Infinity Circle-right10.png" alt="">
+        
+            <div class="container mx-auto pt-3.5">
+                <div class="flex justify-center">
+                    <div class="sm:w-[48rem]">
+                        <div class="grid place-content-center">
+                            <div class="relative sm:space-y-6 sm:pr-3">
+                                <h1 class="font-Kanit font-medium text-white md:text-7xl sm:text-5xl text-2xl ">
+                                    Design
+                                </h1>
+                                <h1 class="font-Kanit font-medium text-white md:text-7xl sm:text-5xl text-2xl md:indent-36 sm:indent-24 indent-8">
+                                    & Developed
+                                </h1>
+                                <img class="md:w-[9.2rem] sm:w-24 w-14 absolute md:top-12 sm:top-8 top-6 md:left-[27.3rem] sm:left-[18.3rem] left-[8.1rem]" src="/img/effects.png" alt="">
+                            </div>
+                        </div>
+    
+                        <div class="">
+                            <div class="relative mt-[2.8rem]">
+                                <img class="w-[rem]" src="/img/Rectangle 96.png" alt="">
+                                <img class="sm:w-20 w-14 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="/img/video.png" alt="">
+                            </div>
+
+                            <div class="sm:flex items-center justify-between pt-[1.8rem]">
+                                <p class="sm:w-96 font-Inter font-light leading-relaxed text-bodyLight text-sm">
+                                    We lamps. Cache it congress, relays detailed than some minutes let redesigns. Could freshlybrewed of wouldn not the arches 
+                                    in kind little the their farther.
+                                </p>
+                                <img class="w-36 ml-24 hidden lg:block" src="/img/Arrow (2).png" alt="">
+                                <div class="w-28 h-28 mt-6 md:mt-0 bg-primary rounded-full grid place-content-center">
+                                    <img class="w-8 m-auto" src="/img/ph_arrow-up-right.png" alt="">
+                                    <small class="font-Inter font-medium text-xs text-center">Explore Us</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        
+            <img class="w-[5.5rem] h-auto float-left" src="/img/Infinity Circle-left10.png" alt="">
+
+            <div class="mx-auto pr-5 pt-[5.8rem]">
+                <div class="sm:w-[48rem] mx-auto">
+                    <div class="space-y-[3.7rem]">
+                        <img class="lg:w-[48rem] sm:w-[34rem] w-60 mx-auto" src="/img/Line 5..png" alt="">
+                        <h3 class="sm:w-96 w-60 font-Kanit sm:font-medium sm:text-[27px] text-[18px] leading-[1.9rem] tracking-wide pt-12 sm:pt-0  text-white m-auto text-center">
+                            We worked with the biggest brands worldwide.
+                        </h3>
+                    </div>
+                    <div class="md:flex items-center justify-between space-y-6 md:space-y-0 pt-[2.7rem] mx-4 sm:mx-0">
+                        <img class="lg:w-[7.3rem] w-28" src="/img/Logo (4).png" alt="">
+                        <img class="lg:w-[7.3rem] w-28" src="/img/Logo (1).png" alt="">
+                        <img class="lg:w-[7.3rem] w-28" src="/img/Logo (2).png" alt="">
+                        <img class="lg:w-[7.3rem] w-28" src="/img/Logo (3).png" alt="">
+                        <img class="lg:w-[7.3rem] w-28" src="/img/Logo (5).png" alt="">
+                    </div>
+                </div>                
+            </div>    
+        </div>
+    </section>
+
+    <section id="services" class="bg-offWhite py-[6.3rem]">
+        <div class="mx-4">
+            <div class="mx-auto space-y-10">
+                <div>
+                    <h2 class="font-Kanit font-medium md:text-[46.4px] sm:text-3xl text-xl md:leading-[3.1rem] tracking-[-0.012em] text-colorHeading text-center mb-10">We develop your brands through our <br> audacious services.</h2>
+                </div>
+    
+                <div class="flex justify-center">
+                    <div class="grid xl:grid-cols-4 sm:grid-cols-2 sm:gap-11 space-y-6 sm:space-y-0">
+                        <div class="sm:w-[18.6rem] w-64 h-[23rem] bg-white/100% shadow-sm p-7 space-y-4">
+                            <img class="w-28" src="/img/Mask group (3).png" alt="">
+                            <div class="space-y-2.5">
+                                <h5 class="font-Kanit text-xl text-colorHeading font-medium">Designing a brand</h5>
+                                <p class="font-Inter font-normal text-[12px] text-body/Dark leading-[1.3rem] tracking-wide">
+                                    The brothers of be select there receive many sitting agency; Them like shoulders object that project redesigns. 
+                                    Assumed those I on those
+                                </p>
+                            </div>
+                            <div class=" space-y-3">
+                                <div class="flex space-x-2">
+                                    <button class="flex items-center justify-between bg-gray-50 px-3 py-1 space-x-2">
+                                        <p class="font-Kanit font-medium tracking-normal text-colorHeading text-[10px]">Logo Design</p>
+                                        <img class="w-2" src="/img/ph_arrow-up-right.png" alt="">
+                                    </button>
+                                    <button class="flex items-center justify-between bg-gray-50 px-3 py-1 space-x-2">
+                                        <p class="font-Kanit font-medium tracking-normal text-colorHeading text-[10px]">Promotion</p>
+                                        <img class="w-2" src="/img/ph_arrow-up-right.png" alt="">
+                                    </button>
+                                </div>
+                                <button class="flex items-center justify-between bg-gray-50 px-3 py-1 space-x-2">
+                                    <p class="font-Kanit font-medium tracking-normal text-colorHeading text-[10px]">Graphic Design</p>
+                                    <img class="w-2" src="/img/ph_arrow-up-right.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class="sm:w-[18.6rem] w-64 h-[23rem] bg-white shadow-sm p-7 space-y-4">
+                            <img class="w-28" src="/img/Mask group.png" alt="">
+                            <div class="space-y-2.5">
+                                <h5 class="font-Kanit sm:text-xl text-colorHeading font-medium">Design of Digital Products</h5>
+                                <p class="font-Inter font-normal text-[12px] text-body/Dark leading-[1.3rem] tracking-wide">
+                                    The in way, to it you'd evening including now gentlemen, real them. News in approved back derided roasted a been that 
+                                    from then on of he the concepts.
+                                </p>
+                            </div>
+                            <div class=" space-y-3">
+                                <div class="flex space-x-2">
+                                    <button class="flex items-center justify-between bg-gray-50 px-3 py-1 space-x-2">
+                                        <p class="font-Kanit font-medium tracking-normal text-colorHeading text-[10px]">Logo Design</p>
+                                        <img class="w-2" src="/img/ph_arrow-up-right.png" alt="">
+                                    </button>
+                                    <button class="flex items-center justify-between bg-gray-50 px-3 py-1 space-x-2">
+                                        <p class="font-Kanit font-medium tracking-normal text-colorHeading text-[10px]">Promotion</p>
+                                        <img class="w-2" src="/img/ph_arrow-up-right.png" alt="">
+                                    </button>
+                                </div>
+                                <button class="flex items-center justify-between bg-gray-50 px-3 py-1 space-x-2">
+                                    <p class="font-Kanit font-medium tracking-normal text-colorHeading text-[10px]">Graphic Design</p>
+                                    <img class="w-2" src="/img/ph_arrow-up-right.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class="sm:w-[18.6rem] w-64 h-[23rem] bg-white shadow-sm p-7 space-y-4">
+                            <img class="w-28" src="/img/Mask group (1).png" alt="">
+                            <div class="space-y-2.5">
+                                <h5 class="font-Kanit sm:text-xl text-colorHeading font-medium">Construction of buildings</h5>
+                                <p class="font-Inter font-normal text-[12px] text-body/Dark leading-[1.3rem] tracking-wide">
+                                    How positives ocean. New that organization. Explain look the its all generally better inn secure he'd circumstances 
+                                    average consider.
+                                </p>
+                            </div>
+                            <div class=" space-y-3">
+                                <div class="flex space-x-2">
+                                    <button class="flex items-center justify-between bg-gray-50 px-3 py-1 space-x-2">
+                                        <p class="font-Kanit font-medium tracking-normal text-colorHeading text-[10px]">Logo Design</p>
+                                        <img class="w-2" src="/img/ph_arrow-up-right.png" alt="">
+                                    </button>
+                                    <button class="flex items-center justify-between bg-gray-50 px-3 py-1 space-x-2">
+                                        <p class="font-Kanit font-medium tracking-normal text-colorHeading text-[10px]">Promotion</p>
+                                        <img class="w-2" src="/img/ph_arrow-up-right.png" alt="">
+                                    </button>
+                                </div>
+                                <button class="flex items-center justify-between bg-gray-50 px-3 py-1 space-x-2">
+                                    <p class="font-Kanit font-medium tracking-normal text-colorHeading text-[10px]">Graphic Design</p>
+                                    <img class="w-2" src="/img/ph_arrow-up-right.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class="sm:w-[18.6rem] w-64 h-[23rem] bg-white shadow-sm p-7 space-y-4">
+                            <img class="w-28" src="/img/Mask group (2).png" alt="">
+                            <div class="space-y-2.5">
+                                <h5 class="font-Kanit text-xl text-colorHeading font-medium">Interior Design</h5>
+                                <p class="font-Inter font-normal text-[12px] text-body/Dark leading-[1.3rem] tracking-wide">
+                                    Derivative to will. Then, five. Apartment, than he far not language the side horses performed there responded 
+                                    to boss's their understanding.
+                                </p>
+                            </div>
+                            <div class=" space-y-3">
+                                <div class="flex space-x-2">
+                                    <button class="flex items-center justify-between bg-gray-50 px-3 py-1 space-x-2">
+                                        <p class="font-Kanit font-medium tracking-normal text-colorHeading text-[10px]">Logo Design</p>
+                                        <img class="w-2" src="/img/ph_arrow-up-right.png" alt="">
+                                    </button>
+                                    <button class="flex items-center justify-between bg-gray-50 px-3 py-1 space-x-2">
+                                        <p class="font-Kanit font-medium tracking-normal text-colorHeading text-[10px]">Promotion</p>
+                                        <img class="w-2" src="/img/ph_arrow-up-right.png" alt="">
+                                    </button>
+                                </div>
+                                <button class="flex items-center justify-between bg-gray-50 px-3 py-1 space-x-2">
+                                    <p class="font-Kanit font-medium tracking-normal text-colorHeading text-[10px]">Graphic Design</p>
+                                    <img class="w-2" src="/img/ph_arrow-up-right.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="flex items-center justify-center space-x-3.5 pt-1">
+                    <img class="sm:w-32 hidden sm:block" src="/img/Arrow blackWhite right 1.png" alt="">
+                    <div class="w-28 h-28 mt-6 md:mt-0 bg-primary rounded-full grid place-content-center space-y-0.5">
+                        <img class="w-7 m-auto" src="/img/ph_arrow-up-right.png" alt="">
+                        <small class="w-20 font-Inter font-semibold tracking-tight leading-tight text-colorHeading text-[12px] text-center">Explore Our Service</small>
+                    </div>
+                    <img class="sm:w-32 hidden sm:block" src="/img/Arrow blackWhite left 1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="winnerAgency" class="pt-0.5 pb-24">
+        <div class="container mx-auto">
+            <div class="md:w-7/12 mx-auto">
+                <div class="space-y-3">
+                    <h2 class="font-Kanit font-medium md:text-[45px] text-2xl leading-none tracking-[0.020] text-colorHeading text-center whitespace-break-spaces">Winner of the Agency  in the year</h2>
+                    <p class="sm:w-4/5 font-Inter font-medium text-body/Dark text-xs leading-[1.3rem] tracking-wide mx-auto text-center">
+                        Different expected warned by handout neuter. Lie reclined character or fate cheek, 
+                        their to the was have were, and overgrown coast government feedback I to little children.
+                    </p>
+                </div>
+                <div class="pt-10 flex items-center justify-center">
+                    <img class="w-[39.1rem]" src="/img/6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="amazing" class="bg-black">
+        <div class=" overflow-auto">
+            <img class="w-[9.5rem] h-auto float-right" src="/img/Infinity Circle for amzing right.png" alt="">
+        
+            <div class="w-8/12 mx-auto">
+                <div class="flex items-center justify-center ">
+                    <div class="space-y-4 pt-[5.7rem]">
+                        <p class="font-Inter font-extralight tracking-[.02rem] text-center text-white text-sm">Have you project in mind?</p>
+                        <div class="space-y-8">
+                            <div class="space-y-2">
+                                <h2 class="font-Kanit text-center text-white md:text-7xl text-3xl">Let's create</h2>
+                                <h2 class="font-Kanit text-center text-white md:text-7xl text-3xl">something amazing!</h2>
+                            </div>
+                            <div class="w-[8.5rem] h-[8.5rem] bg-primary rounded-full mx-auto grid place-content-center">
+                                <img class="w-7 m-auto pb-1" src="/img/ph_arrow-up-right.png" alt="">
+                                <small class="w-20 font-Inter font-semibold text-xs text-center">Contact With Us</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img class="w-[9.5rem] h-auto float-left" src="/img/Infinity Circle for amzing left.png" alt="">
+        </div>
+    </section>
+
+    <section id="recentNews" class="py-10">
+        <div class="container mx-auto">
+            <div class="flex justify-center">
+                <div class="sm:w-3/4 space-y-8">
+                    <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-4 lg:space-x- pb-16">
+                        <div class="w-full h-auto space-y-1 lg:col-span-1 col-span-2">
+                            <div class="relative pt-[4.2rem]">
+                                <h2 class="font-Kanit sm:text-[46px] text-3xl text-colorHeading tracking-[-0.010em] font-medium">Recent</h2>
+                                <h2 class="sm:indent-[5.4rem] indent-16 pt- leading-relaxed text-colorHeading tracking-[-0.010em] font-Kanit sm:text-[46px] text-3xl font-medium">News</h2>
+                                <img class="w-[1.4rem] absolute sm:top-[7.2rem] top-[6.5rem] sm:left-[11.6rem] left-[7.9rem]" src="/img/LINE.png" alt="">
+                            </div>
+                            <p class="font-Inter font-normal text-[12.5px] text-body/Dark leading-[1.3rem] tracking-[0.007em]">
+                                And in audience. Legs him for least great. More Mr. Universal sovereignty. Being clarinet road, 
+                                may saw case odd to both the out peacefully after just her he of the of was doubting and texts 
+                                yield with my relative.
+                            </p>
+                            <div class="pt-[2.4rem]">
+                                <div class="w-28 h-28 bg-primary rounded-full grid place-content-center">
+                                    <img class="w-7 m-auto" src="/img/ph_arrow-up-right.png" alt="">
+                                    <p class="w-20 font-Inter tracking-[-0.020em] text-xs font-semibold text-center pt-0.5">View All Post</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-span-2 space-y-6 lg:pl-12 relative">
+                            <div class="space-y-7 pt-[3.7rem]">
+                                <hr>
+                                <div class="space-y-2">
+                                    <div class="space-x-4 flex items-center">
+                                        <button class="rounded-xl bg-Gray-500 space-x-">
+                                            <p class="font-Kanit font-medium text-colorHeading tracking-normal text-[10px] px-[9px] py-[3px]">Fashion</p>
+                                        </button>
+                                        <div class="flex items-center justify-between space-x-2">
+                                            <p class="font-Inter text-body/Dark text-[11px]">Jan 22, 2023</p>
+                                            <img class="w-2" src="/img/Hiphen.png" alt="">
+                                            <p class="font-Inter text-body/Dark text-[11px]">5 min</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between pt-1">
+                                        <h5 class="sm:w-80 font-Kanit sm:text-[20px] leading-[1.5rem] tracking-[-0.001em] font-medium text-colorHeading">Tips and tricks to improve your sleep quality</h5>
+                                        <img class="sm:w-[2.7rem] w-8" src="/img/arrow 4.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <img class="xl:w-[11rem] xl:h-auto w-28 h-40 hidden sm:block absolute xl:top-[8.9rem] top-40 xl:left-[22.3rem] left-[17rem]" src="/img/Rectangle 64.png" alt="">
+
+                            <div class="space-y-7 pt-[3px]">
+                                <hr>
+                                <div class="space-y-2">
+                                    <div class="space-x-4 flex items-center">
+                                        <button class="rounded-xl bg-Gray-500 space-x-">
+                                            <p class="font-Kanit font-medium text-colorHeading tracking-normal text-[10px] px-[9px] py-[3px]">Fashion</p>
+                                        </button>
+                                        <div class="flex items-center justify-between space-x-2">
+                                            <p class="font-Inter text-body/Dark text-[11px]">Jan 22, 2023</p>
+                                            <img class="w-2" src="/img/Hiphen.png" alt="">
+                                            <p class="font-Inter text-body/Dark text-[11px]">5 min</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between pt-1">
+                                        <h5 class="sm:w-80 font-Kanit sm:text-[20px] leading-[1.5rem] tracking-[-0.001em] underline font-medium text-primary">Lessons from successful entrepreneurs</h5>
+                                        <img class="sm:w-[2.7rem] w-8" src="/img/arrow 4.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-7 pt-[3px]">
+                                <hr>
+                                <div class="space-y-2">
+                                    <div class="space-x-4 flex items-center">
+                                        <button class="rounded-xl bg-Gray-500 space-x-">
+                                            <p class="font-Kanit font-medium text-colorHeading tracking-normal text-[10px] px-[9px] py-[3px]">Fashion</p>
+                                        </button>
+                                        <div class="flex items-center justify-between space-x-2">
+                                            <p class="font-Inter text-body/Dark text-[11px]">Jan 22, 2023</p>
+                                            <img class="w-2" src="/img/Hiphen.png" alt="">
+                                            <p class="font-Inter text-body/Dark text-[11px]">5 min</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between pt-1">
+                                        <h5 class="sm:w-80 font-Kanit sm:text-[20px] leading-[1.5rem] tracking-[-0.001em] font-medium text-colorHeading">Trends and innovations to watch for in 2023 and beyond</h5>
+                                        <img class="sm:w-[2.7rem] w-8" src="/img/arrow 4.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-7 pt-[4px]">
+                                <hr>
+                                <div class="space-y-2">
+                                    <div class="space-x-4 flex items-center">
+                                        <button class="rounded-xl bg-Gray-500 space-x-">
+                                            <p class="font-Kanit font-medium text-colorHeading tracking-normal text-[10px] px-[9px] py-[3px]">Fashion</p>
+                                        </button>
+                                        <div class="flex items-center justify-between space-x-2">
+                                            <p class="font-Inter text-body/Dark text-[11px]">Jan 22, 2023</p>
+                                            <img class="w-2" src="/img/Hiphen.png" alt="">
+                                            <p class="font-Inter text-body/Dark text-[11px]">5 min</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between pt-1">
+                                        <h5 class="sm:w-80 font-Kanit sm:text-[20px] leading-[1.5rem] tracking-[-0.001em] font-medium text-colorHeading">How to make a difference in your community</h5>
+                                        <img class="sm:w-[2.7rem] w-8" src="/img/arrow 4.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr> 
+
+                    <div class="lg:flex items-start justify-between pt-5 xl:space-x-20 lg:space-x-6 space-y-8 lg:space-y-0 pb-2">
+                        <div class="space-y-[1.3rem]">
+                            <h1 class="sm:w-80 font-Kanit font-bold text-colorHeading sm:text-[4.3rem] text-5xl">Let's talk</h1>
+                            <div class="flex space-x-3.5">
+                                <img class="w-[31px]" src="/img/facebook.png" alt="">
+                                <img class="w-[31px]" src="/img/linkedin.png" alt="">
+                                <img class="w-[31px]" src="/img/pinterest.png" alt="">
+                                <img class="w-[31px]" src="/img/twitter.png" alt="">
+                            </div>
+                        </div>
+    
+                        <div class="xl:pl-[4.5rem]">
+                            <p class="w-44 font-Inter text-body/Dark text-[13.3px]">4517 Washington Ave. Manchester, Kentucky 39495</p>
+                            <p class="w-44 font-Inter text-body/Dark text-[13.3px] pt-4">support@themeix.com</p>
+                            <p class="w-44 font-Inter text-body/Dark text-[13.3px]">+123 456 7891</p>
+                        </div>
+    
+                        <div class="relative">
+                            <label class="font-Inter text-colorHeading text-xs font-medium" for="email">Enter Your Email</label>
+                            <br>
+                            <input class="xl:w-48 lg:w-28 border-b border-gray-300 focus:outline-none" type="email">
+                            <img class="w-5 absolute top-7 xl:left-44 lg:left-24 left-44" src="/img/ph_arrow-up-right.png" alt="">
+                        </div>
+                    </div>
+                    <hr>
+
+                    <footer class="md:flex items-start justify-between space-y-6 md:space-y-0">
+                        <p class="font-Inter text-body/Dark text-xs">&copy; 2023  All right reserved by <strong class="font-bodyFont text-xs text-colorHeading">Themeix</strong> </p>
+                        <div class="flex space-x-4">
+                            <p class="font-Inter text-body/Dark text-xs">Privacy Policy</p>
+                            <img class="" src="/img/Line 9.png" alt="">
+                            <p class="font-Inter text-body/Dark text-xs">Terms & Condition</p>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+         // ================ Hamburger
+        // ================ Hamburger
+        const hamBurger = document.querySelector('#hamburger');
+        const menu = document.querySelector('#Menu');
+        const hLink = document.querySelectorAll('#hlink');
+        const faSolid = document.querySelector('.fa-solid');
+        
+        
+        // ================ menuBar
+        // ================ menuBar
+        hamBurger.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            faSolid.classList.toggle('fa-xmark');
+        })
+
+        hLink.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                faSolid.classList.toggle('fa-xmark');
+            })
+        })
+
+
+        // ================ dropDown
+        // ================ dropDown
+        // const page = document.querySelector('#page');
+        // const dropDown = document.querySelector('#dropDown');
+        // const dlink = document.querySelector('#dlink');
+        // const fadown = document.querySelector('.fa-angle-down');
+
+
+        // page.addEventListener('click', () => {
+        //     dropDown.classList.toggle('hidden');
+        //     fadown.classList.toggle('fa-xmark');
+        // })
+
+        // dlink.forEach(drop => {
+        //     drop.addEventListener('click', () => {
+        //         dropDown.classList.toggle('hidden');
+        //         fadown.classList.toggle('fa-xmark');
+        //     })
+        // })
+    
+        // ================ Initialize Swiper
+        // ================ Initialize Swiper
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            centeredSlides: false,
+            spaceBetween: 20,
+
+                navigation: {
+                    nextEl: "#button-next",
+                    prevEl: "#button-prev",
+                },
+        });
+
+
+        
+    </script>
+</body>
+</html>
